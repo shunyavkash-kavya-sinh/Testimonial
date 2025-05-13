@@ -13,10 +13,17 @@ if (document.querySelector(".testimonial-slider")) {
   var testimonialSlider = new Splide(".splide", {
     arrows: false,
     pagination: false,
-    perPage: "4",
+    perPage: "3",
     gap: "60px",
-    type: "loop",
-    drag: "free",
+    breakpoints: {
+      1024: {
+        perPage: 2,
+        gap: "40px",
+      },
+      576: {
+        perPage: 1,
+      },
+    },
   });
   testimonialSlider.mount();
 }
