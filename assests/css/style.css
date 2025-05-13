@@ -105,6 +105,7 @@ body {
 .testimonial-dec {
   display: none;
 }
+
 .testimonial-dec.active-tab {
   display: block;
 }

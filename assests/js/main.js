@@ -1,3 +1,5 @@
+//tab js
+
 function showSection(imgElement, id) {
   const sections = document.querySelectorAll(".testimonial-dec");
   sections.forEach((sec) => sec.classList.remove("active-tab"));
@@ -8,6 +10,8 @@ function showSection(imgElement, id) {
   });
   imgElement.classList.add("active");
 }
+
+//slider js
 
 if (document.querySelector(".testimonial-slider")) {
   var testimonialSlider = new Splide(".splide", {
